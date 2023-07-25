@@ -5,4 +5,5 @@ pytest -s -v tests/integration_test/test_create_booking.py --html=report.html
 
 git init
 git add .          #add directories to be ignored under .gitignore
+git push origin master
 SKIP=gitleaks git commit -m "first commit"   #to avoid gitleaks error

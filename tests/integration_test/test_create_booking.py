@@ -42,6 +42,9 @@ class TestIntegration(object):
     # Headers -> Headers Utils
     # Verify - Seperate Verify
 
+# create booking, update booking name - get the booking ID and verify
+# create booking, delete it and verify
+
 '''
 
 
