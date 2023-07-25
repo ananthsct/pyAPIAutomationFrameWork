@@ -1,0 +1,7 @@
+pytest -v -s
+allure serve allure-results   #to check allure-commandline installed
+pytest -s -v tests/* --alluredir=./reports --html=report.html
+
+git init
+git add .          #add directories to be ignored under .gitignore
+SKIP=gitleaks git commit -m "first commit"   #to avoid gitleaks error
