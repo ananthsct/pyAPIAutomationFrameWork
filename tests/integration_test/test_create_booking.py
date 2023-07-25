@@ -21,6 +21,7 @@ from src.helpers.utils import common_headers
 # Base URL
 # Verify
 
+
 class TestIntegration(object):
 
     @pytest.fixture(scope="module")
@@ -30,7 +31,9 @@ class TestIntegration(object):
     @pytest.mark.run(order=1)
     def test_create_booking_tc1(self):
         response = post_request(url=url_create_booking(), headers=common_headers(), auth=None,
-                                payload=payload_create_booking(), in_json=True)
+                                payload=payload_create_booking(), in_json=False)
+        print(response.status_code)
+        print(response.json())
         verify_http_code(response, 200)
         verify_key_for_not_null_greater_than_zero(response.json()["bookingid"])
 

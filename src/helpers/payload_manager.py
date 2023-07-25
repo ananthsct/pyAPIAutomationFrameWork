@@ -1,7 +1,7 @@
 def payload_create_booking():
     # In future you can replace this from the excel or JSON
     payload = {
-        "firstname": "Pramod",
+        "firstname": "Ananth",
         "lastname": "Dutta",
         "totalprice": 432,
         "depositpaid": True,
