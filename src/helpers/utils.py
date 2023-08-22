@@ -12,10 +12,18 @@ def get_payload_auth():
 
 def common_headers():
     headers = {
-        'Content-Type' : 'application/json'
+        'Content-Type': 'application/json'
     }
     return headers
 
+
+def common_put_patch_headers(booking_id):
+    headers = {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "Cookie": "token="+booking_id
+    }
+    return headers
 
 # Read from the Excel and Run a Test case Multiple Times
 # Data driven -
